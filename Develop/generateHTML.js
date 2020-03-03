@@ -137,7 +137,6 @@ function generateHTML(data) {
          padding-left: 100px;
          padding-right: 100px;
          }
-
          .row {
            display: flex;
            flex-wrap: wrap;
@@ -145,7 +144,6 @@ function generateHTML(data) {
            margin-top: 20px;
            margin-bottom: 20px;
          }
-
          .card {
            padding: 20px;
            border-radius: 6px;
@@ -153,22 +151,30 @@ function generateHTML(data) {
            color: ${colors[data.color].headerColor};
            margin: 20px;
          }
-         
          .col {
          flex: 1;
          text-align: center;
          }
-
          a, a:hover {
          text-decoration: none;
          color: inherit;
          font-weight: bold;
          }
-
-         @media print { 
-          body { 
-            zoom: .75; 
-          } 
+         @media print {
+          body {
+            zoom: .75;
+          }
          }
-      </style>`
-        }
+      </style>
+      <body>
+        <div class='container'>
+          <div class="photo-header">
+            <h1>${data.name}</div>
+            <img src="${data.avatar_url}"/>
+          </div>
+        </div>
+      </body>
+      `
+        };
+
+exports.generateHTML = generateHTML;
