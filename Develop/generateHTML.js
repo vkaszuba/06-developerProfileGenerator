@@ -100,16 +100,20 @@ function generateHTML(data) {
          width: 95%;
          border-radius: 6px;
          }
-         .photo-header img {
-         width: 250px;
-         height: 250px;
+
+         img {
+         width: 200px;
+         height: 200px;
          border-radius: 50%;
          object-fit: cover;
-         margin-top: -75px;
+         position: fixed;
+         left: 100px;
+         top: 0;
+         margin-top: 75px;
          border: 6px solid ${colors[data.color].photoBorderColor};
          box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
          }
-         .photo-header h1, .photo-header h2 {
+         .photo-header h1, .photo-header h6 {
          width: 100%;
          text-align: center;
          }
@@ -147,6 +151,7 @@ function generateHTML(data) {
          .card {
            padding: 20px;
            border-radius: 6px;
+           text-align: center;
            background-color: ${colors[data.color].headerBackground};
            color: ${colors[data.color].headerColor};
            margin: 20px;
@@ -168,13 +173,42 @@ function generateHTML(data) {
       </style>
       <body>
         <div class='container'>
-          <div class="photo-header">
-            <h1>${data.name}</div>
-            <img src="${data.avatar_url}"/>
-          </div>
+
+        <div class="card photo-header">
+        <img src="${data.avatar_url}"/>
+          <h1>${data.name}</h1>
         </div>
+
+          <div class="card">
+            <h6>
+              ${data.location}
+              ||
+              <a href="${data.blog}">Blog</a>
+              ||
+              <a href="${data.html_url}">GitHub Profile</a>
+            </h6>
+          </div>
+
+          <div class= "card">
+            Bio: ${data.bio}
+          </div>
+          <div class= "card">
+            Followers: ${data.followers}
+          </div>
+          <div class= "card">
+            Following: ${data.following}
+          </div>
+          <div class= "card">
+            Repositories: ${data.public_repos}
+          </div>
+          <div class= "card">
+            GitHub Stars: ${data.public_gists}
+          </div>
+
+        </div>
+
       </body>
       `
-        };
+        }
 
-exports.generateHTML = generateHTML;
+exports.generateHTML = generateHTML

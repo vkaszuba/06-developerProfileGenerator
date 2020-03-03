@@ -34,10 +34,10 @@ function init() {
   .then(function (ans) {
     axios.get(`https://api.github.com/users/${ans.userName}`)
       .then(res => {
-        res.data.color = ans.color
-        writeToFile(`${res.data.name}_thing.pdf`, html.generateHTML(res.data))
-      })
-  })
+        res.data.color = ans.color;
+        writeToFile(`${res.data.name}_GitProfile.pdf`, html.generateHTML(res.data));
+      });
+  });
 };
 
 init();
