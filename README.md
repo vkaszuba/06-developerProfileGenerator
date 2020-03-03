@@ -28,6 +28,12 @@ A Node-run application that allows an employers to quickly turn all important in
 * Number of GitHub stars
 * Number of users following
 
+## Challenges
+
+- Understanding what and why components work together in calling information from packages
+- Locating the bast package to fit my needs
+- Working with HTML through a JavaScript file, not being able to immediately see my changes
+
 ## Screenshots
 ![Node](https://github.com/vkaszuba/06-developerProfileGenerator/blob/master/Images/node.JPG)
-![PDF](https://github.com/vkaszuba/06-developerProfileGenerator/blob/master/Images/node.JPG)
+![PDF](https://github.com/vkaszuba/06-developerProfileGenerator/blob/master/Images/profilePdf.JPG)
