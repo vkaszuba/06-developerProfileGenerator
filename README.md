@@ -29,5 +29,5 @@ A Node-run application that allows an employers to quickly turn all important in
 * Number of users following
 
 ## Screenshots
-![Node](https://github.com/vkaszuba/06-developerProfileGenerator/blob/master/images/node.JPG)
-![PDF](https://github.com/vkaszuba/06-developerProfileGenerator/blob/master/images/profilePdf.JPG)
+![Node](https://github.com/vkaszuba/06-developerProfileGenerator/blob/master/Images/node.JPG)
+![PDF](https://github.com/vkaszuba/06-developerProfileGenerator/blob/master/Images/node.JPG)
