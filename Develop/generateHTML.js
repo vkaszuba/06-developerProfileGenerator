@@ -25,7 +25,9 @@ const colors = {
   }
 };
 
+
 function generateHTML(data) {
+  data = JSON.parse(JSON.stringify(data).replace(/\:null/gi, "\:\"\"")); 
   return `<!DOCTYPE html>
 <html lang="en">
    <head>
